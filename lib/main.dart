@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nps/utilities/constants.dart';
-import 'package:nps/views/home_screen.dart';
-import 'file:///D:/Projects/Flutter/NPS/nps/lib/views/nav_screen.dart';
+import 'package:nps/views/home/home_screen.dart';
+import 'package:nps/views/nav_screen.dart';
 import 'package:nps/views/intro_screen.dart';
 import 'package:nps/views/login_screen.dart';
 

@@ -6,6 +6,7 @@ import 'package:map_launcher/map_launcher.dart';
 import 'package:nps/utilities/commons.dart';
 import 'package:nps/utilities/constants.dart';
 import 'package:nps/utilities/size_config.dart';
+import 'package:nps/views/home/option_slider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -43,8 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(5.0),
                   child: Container(
-                    height: 50.0,
-                    margin: const EdgeInsets.only(bottom: 6.0),
+                    height: 60.0,
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Color(Constant.primaryColor),
@@ -59,29 +59,33 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Column(
                           children: [
+
                             IconButton(
+                              padding: EdgeInsets.all(15),
                                 color: Colors.pink,
                                 icon: Icon(
                                   Icons.phone,
-                                  size: 40,
+                                  size: 30,
                                   //color: Color(Constant.primaryColor),
                                 ),
                                 onPressed: () {_launchCall();}),
                           ],
                         ),
                         SizedBox(
-                          width: SizeConfig.blockSizeHorizontal * 19,
+                          width: SizeConfig.blockSizeHorizontal * 16,
                         ),
                         Column(
                           children: [
                             IconButton(
+                                padding: EdgeInsets.all(15),
                                 color: Colors.green,
                                 icon: Icon(
                                   Icons.location_on,
-                                  size: 40,
+                                  size: 30,
                                   //color: Color(Constant.primaryColor),
                                 ),
                                 onPressed: () {openMapsSheet(context);}),
@@ -89,15 +93,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
 
                         SizedBox(
-                          width: SizeConfig.blockSizeHorizontal * 19,
+                          width: SizeConfig.blockSizeHorizontal * 16,
                         ),
                         Column(
                           children: [
                             IconButton(
+                              padding: EdgeInsets.all(15),
                               color: Colors.amber,
                                 icon: Icon(
                                   Icons.message,
-                                  size: 40,
+                                  size: 30,
                                   //color: Color(Constant.primaryColor),
                                 ),
                                 onPressed: () {_modalBottomSheetMenu();}),
@@ -109,12 +114,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-              SizedBox(
-                height: SizeConfig.blockSizeVertical * 4,
-              ),
 
 
-              //TopImageSlider(),
+                OptionSlider(),
               // HomeSection2(),
               // HomeSection3(),
               // HomeSection4(),

@@ -73,7 +73,7 @@ class Common {
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
-          bottom: Radius.circular(80),
+          bottom: Radius.circular(30),
         ),
       ),
       backgroundColor: Colors.white,

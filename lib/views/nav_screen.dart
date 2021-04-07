@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nps/utilities/commons.dart';
 import 'package:nps/utilities/size_config.dart';
-import 'package:nps/views/home_screen.dart';
+import 'package:nps/views/home/home_screen.dart';
 import 'package:nps/views/notifications_screen.dart';
 import 'package:nps/views/settings_screen.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';

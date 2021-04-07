@@ -1,29 +1,29 @@
-import 'package:nps/models/image.dart';
+import 'package:nps/models/image_model.dart';
 
 class HomeController {
-  List<Image> getTopSliderImagesList()
+  List<ImageModel> getOptionsList()
   {
     return [
-      Image(
-          imageName: "NPS",
-          imageUrl:"assets/images/noble.jpeg"
+      ImageModel(
+          imageName: "Pay Fees",
+          imageUrl:"assets/images/pay_fees.png"
       ),
-      Image(
-          imageName: "NPS",
-          imageUrl:"assets/images/noble.jpeg"
+      ImageModel(
+          imageName: "Admission Form",
+          imageUrl:"assets/images/admission_form.png"
       ),
-      Image(
-          imageName: "NPS",
-          imageUrl:"assets/images/noble.jpeg"
-      ),
-      Image(
-          imageName: "NPS",
-          imageUrl:"assets/images/noble.jpeg"
-      ),
-      Image(
-          imageName: "NPS",
-          imageUrl:"assets/images/noble.jpeg"
-      ),
+      // ImageModel(
+      //     imageName: "NPS",
+      //     imageUrl:"assets/images/noble.png"
+      // ),
+      // ImageModel(
+      //     imageName: "NPS",
+      //     imageUrl:"assets/images/noble.png"
+      // ),
+      // ImageModel(
+      //     imageName: "NPS",
+      //     imageUrl:"assets/images/noble.png"
+      // ),
     ] ;
   }
 }
