@@ -12,7 +12,7 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 1,
+      seconds: 15,
       navigateAfterSeconds: new NavScreen(),
       loadingText: Text(
         "STAY SAFE",
@@ -22,12 +22,12 @@ class _IntroScreenState extends State<IntroScreen> {
       title: Text(
         'Welcome to \nNOBLE PUBLIC SCHOOL',
         textAlign: TextAlign.center,
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
       ),
-      image: new Image.asset('assets/images/logo.png'),
+      image: new Image.asset('assets/images/introBooksImage.png'),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
-      photoSize: 50.0,
+      photoSize: 150.0,
       loaderColor: Colors.red,
     );
   }
