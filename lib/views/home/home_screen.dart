@@ -15,6 +15,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Common.appBarTitle = "Noble Public School";
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               SizedBox(
-                height: SizeConfig.blockSizeVertical * 4,
+                height: SizeConfig.blockSizeVertical * 2,
               ),
 
               Padding(

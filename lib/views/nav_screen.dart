@@ -55,13 +55,7 @@ class _NavScreenState extends State<NavScreen> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: SafeArea(
+    return SafeArea(
         child: Scaffold(
           appBar: Common.appBarWithAlertDialog(context),
           body: buildPageView(),
@@ -73,7 +67,6 @@ class _NavScreenState extends State<NavScreen> {
             },
           ),
         ),
-      ),
-    );
+      );
   }
 }

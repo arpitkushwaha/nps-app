@@ -70,7 +70,9 @@ class _OptionSliderState extends State<OptionSlider> {
           const EdgeInsets.only(top: 20, bottom: 30, left: 0, right: 35),
           child: InkWell(
             onTap: () {
-              showAlertBox(context, index);
+              //showAlertBox(context, index);
+              print('onItemClick');
+              onItemClick(context, index);
             },
             child: Container(
               height: 50,
@@ -80,7 +82,7 @@ class _OptionSliderState extends State<OptionSlider> {
                 image: new DecorationImage(
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.29), BlendMode.dstATop),
+                      Colors.black.withOpacity(0.39), BlendMode.dstATop),
                   image: AssetImage(optionsList[index].imageUrl),
                 ),
                 borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -89,7 +91,7 @@ class _OptionSliderState extends State<OptionSlider> {
                 child: Text(
                   '${optionsList[index].imageName}',
                   style: TextStyle(
-                    color: Colors.white70,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                   ),
@@ -119,6 +121,15 @@ class _OptionSliderState extends State<OptionSlider> {
         builder: (BuildContext) {
           return alertBox;
         });
+  }
+  
+  
+  void onItemClick(BuildContext context, int index)
+  {
+    if(index == 0)
+      Navigator.pushNamed(context, Constant.payFeesScreenRoute);
+    else if(index == 1)
+      Navigator.pushNamed(context, Constant.admissionFormScreenRoute);
   }
 
 }
